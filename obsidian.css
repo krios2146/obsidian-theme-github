@@ -70,6 +70,7 @@ a:-webkit-any-link:hover {
 }
 .markdown-rendered pre code {
     padding: 1em;
+    background: none;
 }
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
