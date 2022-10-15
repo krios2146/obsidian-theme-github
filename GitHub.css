@@ -46,12 +46,12 @@ body {
     --code-background: var(--background-primary-alt);
     --code-normal: var(--text-muted);
     --code-comment: var(--text-faint);
-    --code-function: var(--color-yellow);
+    --code-function: var(--color-orange);
     --code-important: var(--color-orange);
-    --code-keyword: var(--color-pink);
-    --code-property: var(--color-cyan);
+    --code-keyword: var(--color-red);
+    --code-property: var(--color-blue);
     --code-punctuation: var(--text-muted);
-    --code-string: var(--color-green);
+    --code-string: var(--color-cyan);
     --code-tag: var(--color-red);
     --code-value: var(--color-purple);
     /* Collapse icons */
@@ -487,15 +487,15 @@ body {
     --mono-rgb-0: 0, 0, 0;
     --mono-rgb-100: 177, 186, 196;
     --color-red-rgb: 248, 81, 73;
-    --color-red: #f85149;
+    --color-red: #F47067;
     --color-green-rgb: 126, 231, 135;
     --color-green: #7ee787;
-    --color-orange: #E9973F;
-    --color-yellow: #E0DE71;
-    --color-cyan: #53DFDD;
-    --color-blue: #027aff;
-    --color-purple: #a882ff;
-    --color-pink: #FA99CD;
+    --color-orange: #FFA657;
+    --color-yellow: #d29922;
+    --color-cyan: #A5D6FF;
+    --color-blue: #6CB6FF;
+    --color-purple: #D2A8FF;
+    --color-pink: #f778ba;
     --color-base-00: #0d1117;
     --color-base-10: #161b22;
     --color-base-20: #161b22;
@@ -614,4 +614,12 @@ input[type='password']:focus-visible,
 input[type='number']:focus-visible,
 select:focus, .dropdown:focus {
     box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
+}
+
+/* inline code block */
+.markdown-rendered :not(pre) > code {
+    background-color: #6e768166;
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    color: var(--color-base-100);
 }
