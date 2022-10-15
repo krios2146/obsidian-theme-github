@@ -611,6 +611,7 @@ input[type='text']:focus-visible,
 input[type='search']:focus-visible, 
 input[type='email']:focus-visible, 
 input[type='password']:focus-visible, 
-input[type='number']:focus-visible {
+input[type='number']:focus-visible,
+select:focus, .dropdown:focus {
     box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
 }
