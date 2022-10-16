@@ -525,6 +525,18 @@ body {
     --shadow-s: none;
     --shadow-l: none;
 }
+.is-mobile.theme-dark {
+    --color-base-00: #0d1117;
+    --color-base-10: #161b22;
+    --color-base-20: #161b22;
+    --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
+    --modal-background: var(--background-secondary);
+    --search-result-background: var(--background-secondary);
+    --background-modifier-form-field: var(--background-modifier-border);
+    --background-modifier-cover: rgba(0, 0, 0, 0.5);
+    --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
+    --settings-home-background: var(--background-primary);
+}
 
 /* Tables */
 .markdown-rendered th {
