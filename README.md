@@ -7,9 +7,10 @@ A theme for Obsidian based on GitHub colors (dark only)
 
 ![Screenshot-3](/screenshots/command-palette.png)
 
-### Install
-1. Download `theme.css` file
-2. Paste this file to **/your_vault/.obsidian/themes** folder
-3. In Obsidian go to Settings -> Appearance -> select theme
+## Install
+1. Download `theme.css` and `manifest.json` files from latest [release](https://github.com/krios2146/obsidian-github/releases/)
+2. Go to **/your_vault/.obsidian/themes/** and create folder for theme files
+3. Paste downloaded theme files into created folder
+4. In Obsidian go to Settings -> Appearance -> select **GitHub** theme in dropdown menu
 
-Make sure that your Base theme is **dark**
+Make sure that your Base color scheme is **dark**
