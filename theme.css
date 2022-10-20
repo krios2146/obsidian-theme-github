@@ -623,6 +623,9 @@ button.kanban-plugin__new-item-button {
     color: var(--text-normal);
     background-color: inherit;
 }
+.kanban-plugin__lane-items {
+    padding: 8px 15px;
+}
 
 /* fix: input borders */
 textarea:active, 

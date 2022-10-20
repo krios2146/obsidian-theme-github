@@ -22,6 +22,14 @@
 
 Make sure that your Base color scheme is **dark**
 
+## Supported plugins
+Most plugins should work well with a GitHub theme if their not, let me know in [issues](https://github.com/krios2146/obsidian-github/issues). 
+
+List of specially styled plugins is shown below:
+
+ - Kanban cards was been styled like a GitHub Projects cards 
+
+
 ## Contributing
 Feel free to open [issue](https://github.com/krios2146/obsidian-github/issues) on GitHub if you find some issue/bug with theme or you want me to add some plugin support. 
 
