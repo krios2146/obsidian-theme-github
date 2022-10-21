@@ -11,6 +11,8 @@
 
 ![Screenshot-3](/screenshots/command-palette.png)
 
+![Kanban](/screenshots/kanban-plugin.png)
+
 </p>
 </details>
 
