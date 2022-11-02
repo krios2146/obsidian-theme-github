@@ -19,13 +19,11 @@
 ## How to Install
 In Obsidian go to Settings -> Appearence -> Click Manage -> Find GitHub theme in store
 
-#### Manually
+##### Manually
 1. Download `theme.css` and `manifest.json` files from latest [release](https://github.com/krios2146/obsidian-github/releases/)
 2. Go to **/your_vault/.obsidian/themes/** and create folder for theme files
 3. Paste downloaded theme files into created folder
 4. In Obsidian go to Settings -> Appearance -> select GitHub theme in dropdown menu
-
-Make sure that your Base color scheme is **dark**
 
 ## Supported plugins
 Most plugins should work well with a GitHub theme if their not, let me know in [issues](https://github.com/krios2146/obsidian-github/issues). 
