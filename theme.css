@@ -519,8 +519,6 @@ body {
     --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
 
     --background-secondary-alt: var(--color-base-25);
-    --interactive-normal: var(--color-base-35); /*???*/
-    --interactive-hover: var(--color-base-40); /*???*/
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
     --background-modifier-cover: rgba(10, 10, 10, 0.4);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
@@ -600,6 +598,7 @@ body {
     --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
     --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+
     --background-secondary-alt: var(--color-base-05);
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
     --background-modifier-cover: rgba(220, 220, 220, 0.4);
@@ -664,7 +663,7 @@ body {
     --callout-padding: 0 1em;
 }
 .callout {
-    border-left: 0.25em solid var(--color-base-40);
+    border-left: 0.25em solid var(--color-base-30);
     background-color: transparent;
     color: var(--text-muted);
 }
