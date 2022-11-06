@@ -1,3 +1,97 @@
+/* @settings
+
+name: GitHub theme settings
+id: id
+settings:
+    - 
+        id: callout
+        title: Callouts
+        type: heading
+        level: 1
+    - 
+        id: callout-on
+        title: GitHub callout style
+        type: class-toggle
+        default: on
+    -
+        id: headers
+        title: Headers colors
+        type: heading
+        level: 1
+    -
+        id: all-headers
+        title: All headers
+        type: heading
+        level: 3
+    -
+        id: headers-one-color
+        title: All headers are the same color
+        type: class-toggle
+        default: on
+    -
+        id: h-color-theme
+        title: Header color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+        id: particular headers
+        title: Particular headers
+        description: This settings won't work if   `All headers are the same color`   is ON
+        type: heading
+        level: 3
+    -
+        id: h1-color-theme
+        title: h1 color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+        id: h2-color-theme
+        title: h2 color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+        id: h3-color-theme
+        title: h3 color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+        id: h4-color-theme
+        title: h4 color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+        id: h5-color-theme
+        title: h5 color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+        id: h6-color-theme
+        title: h6 color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#24292f'
+        default-dark: '#7ee787'
+    -
+*/
 body {
     /* Animations */
     --anim-duration-none: 0;
@@ -530,6 +624,7 @@ body {
     --shadow-l: none;
 
     --inline-code-background: #6e768166;
+    --h-color-theme: var(--color-green);
     --h1-color-theme: var(--color-green);
     --h2-color-theme: var(--color-green);
     --h3-color-theme: var(--color-green);
@@ -610,6 +705,7 @@ body {
     --shadow-l: none;
 
     --inline-code-background: #aeb8c133;
+    --h-color-theme: var(--text-normal);
     --h1-color-theme: var(--text-normal);
     --h2-color-theme: var(--text-normal);
     --h3-color-theme: var(--text-normal);
@@ -657,18 +753,28 @@ button.mod-cta:hover {
 }
 
 /* Callout */
-body {
+body.callout-on {
     --callout-radius: 0;
     --callout-border-width: 0;
     --callout-padding: 0 1em;
 }
-.callout {
+body.callout-on .callout {
     border-left: 0.25em solid var(--color-base-30);
     background-color: transparent;
     color: var(--text-muted);
 }
-.callout-content p {
+body.callout-on .callout-content p {
     margin: 0.1em 0;
+}
+
+/* Headers */
+body.headers-one-color {
+    --h1-color: var(--h-color-theme);
+    --h2-color: var(--h-color-theme);
+    --h3-color: var(--h-color-theme);
+    --h4-color: var(--h-color-theme);
+    --h5-color: var(--h-color-theme);
+    --h6-color: var(--h-color-theme);
 }
 
 /* Kanban */
