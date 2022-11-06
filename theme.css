@@ -192,8 +192,8 @@ body {
     --clickable-icon-radius: var(--radius-s);
     /* Indentation guide */
     --indentation-guide-width: 1px;
-    --indentation-guide-color: rgba(var(--mono-rgb-0), 0.12);
-    --indentation-guide-color-active: rgba(var(--mono-rgb-0), 0.3);
+    --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+    --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
     /* Inline title */
     --inline-title-color: var(--h1-color);
     --inline-title-font: var(--h1-font);
@@ -303,9 +303,9 @@ body {
     --ribbon-width: 44px;
     --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
     /* Scrollbars */
-    --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-0), 0.2);
-    --scrollbar-bg: rgba(var(--mono-rgb-0), 0.05);
-    --scrollbar-thumb-bg: rgba(var(--mono-rgb-0), 0.1);
+    --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+    --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+    --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
     /* Search */
     --search-clear-button-color: var(--text-muted);
     --search-clear-button-size: 13px;
@@ -451,7 +451,7 @@ body {
     --background-primary: var(--color-base-00);
     --background-primary-alt: var(--color-base-10);
     --background-secondary: var(--color-base-20);
-    --background-modifier-hover: rgba(var(--mono-rgb-100), var(--background-modifier-hover-alpha));
+    --background-modifier-hover: rgba(var(--rgb-hover), var(--background-modifier-hover-alpha));
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
     --background-modifier-border-hover: var(--color-base-30);
@@ -484,8 +484,9 @@ body {
 .theme-dark {
     color-scheme: dark;
     --highlight-mix-blend-mode: lighten;
-    --mono-rgb-0: 177, 186, 196;
-    --mono-rgb-100: 177, 186, 196;
+    --mono-rgb-0: 0, 0, 0;
+    --mono-rgb-100: 255, 255, 255;
+    --rgb-hover: 177, 186, 196;
     --color-red-rgb: 248, 81, 73;
     --color-red: #F47067;
     --color-green-rgb: 126, 231, 135;
@@ -518,8 +519,6 @@ body {
     --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
 
     --background-secondary-alt: var(--color-base-25);
-    --interactive-normal: var(--color-base-35); /*???*/
-    --interactive-hover: var(--color-base-40); /*???*/
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
     --background-modifier-cover: rgba(10, 10, 10, 0.4);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
@@ -565,8 +564,9 @@ body {
 .theme-light {
     color-scheme: light;
     --highlight-mix-blend-mode: darken;
-    --mono-rgb-0: 0, 0, 0;
-    --mono-rgb-100: 208, 215, 222;
+    --mono-rgb-0: 255, 255, 255;
+    --mono-rgb-100: 0, 0, 0;
+    --rgb-hover: 208, 215, 222;
     --color-red-rgb: 228, 55, 75;
     --color-red: #cf222e;
     --color-green-rgb: 12, 181, 79;
@@ -598,6 +598,7 @@ body {
     --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
     --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+
     --background-secondary-alt: var(--color-base-05);
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
     --background-modifier-cover: rgba(220, 220, 220, 0.4);
@@ -624,7 +625,7 @@ body {
     --kanban-lane-background: var(--background-primary-alt);
     --kanban-item-background: var(--background-primary);
     --kanban-lane-border: #d8dee4;
-    --kanban-lane-count: #afb8c133;
+    --kanban-lane-count: #aeb8c133;
     --kanban-options-btn: var(--background-primary-alt);
 }
 
@@ -653,6 +654,21 @@ button.mod-cta {
 }
 button.mod-cta:hover {
     background-color: var(--color-btn-primary-hover-bg);
+}
+
+/* Callout */
+body {
+    --callout-radius: 0;
+    --callout-border-width: 0;
+    --callout-padding: 0 1em;
+}
+.callout {
+    border-left: 0.25em solid var(--color-base-30);
+    background-color: transparent;
+    color: var(--text-muted);
+}
+.callout-content p {
+    margin: 0.1em 0;
 }
 
 /* Kanban */
@@ -742,5 +758,5 @@ select:focus, .dropdown:focus {
     background-color: var(--inline-code-background);
     padding: 0.2em 0.4em;
     border-radius: 6px;
-    color: var(--color-base-100);
+    color: var(--text-normal);
 }
