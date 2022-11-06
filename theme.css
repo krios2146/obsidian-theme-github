@@ -1,3 +1,20 @@
+/* @settings
+
+name: GitHub theme settings
+id: id
+settings:
+    - 
+        id: callout-heading
+        title: Callouts
+        type: heading
+        level: 1
+    - 
+        id: callout-on
+        title: GitHub callout style
+        type: class-toggle
+        default: on
+
+*/
 body {
     /* Animations */
     --anim-duration-none: 0;
@@ -657,17 +674,17 @@ button.mod-cta:hover {
 }
 
 /* Callout */
-body {
+body.callout-on {
     --callout-radius: 0;
     --callout-border-width: 0;
     --callout-padding: 0 1em;
 }
-.callout {
+body.callout-on .callout {
     border-left: 0.25em solid var(--color-base-30);
     background-color: transparent;
     color: var(--text-muted);
 }
-.callout-content p {
+body.callout-on .callout-content p {
     margin: 0.1em 0;
 }
 
