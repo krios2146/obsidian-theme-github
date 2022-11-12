@@ -4,25 +4,37 @@ name: GitHub theme settings
 id: id
 settings:
     - 
+
+        # Callout Settings
+
         id: callout
         title: Callouts
         type: heading
         level: 1
+        collapsed: true
     - 
         id: callout-on
         title: GitHub callout style
         type: class-toggle
         default: on
     -
+
+        # Headers Settings
+
         id: headers
         title: Headers colors
         type: heading
         level: 1
+        collapsed: true
     -
+
+        # All Headers
+
         id: all-headers
         title: All headers
         type: heading
         level: 3
+        collapsed: true
     -
         id: headers-one-color
         title: All headers are the same color
@@ -37,11 +49,15 @@ settings:
         default-light: '#24292f'
         default-dark: '#7ee787'
     -
+
+        # Particular Headers
+
         id: particular headers
         title: Particular headers
-        description: This settings won't work if   `All headers are the same color`   is ON
+        description: This settings won't work if `All headers are the same color` is ON
         type: heading
         level: 3
+        collapsed: true
     -
         id: h1-color-theme
         title: h1 color
@@ -91,6 +107,55 @@ settings:
         default-light: '#24292f'
         default-dark: '#7ee787'
     -
+
+        # Kanban Settings
+
+        id: kanban
+        title: Kanban
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: kanban-variant
+        title: Kanban variant
+        description: Variations of Kanban styles
+        type: class-select
+        allowEmpty: false
+        default: kanban-full
+        options:
+            -
+                label: GitHub projects style
+                value: kanban-full
+            -
+                label: Minimal style
+                value: kanban-on
+            -
+                label: Disable styles
+                value: kanban-off
+    -
+        id: kanban-same-height-cards
+        title: Minimal height for cards
+        description: All cards will have the same initial height
+        type: class-toggle
+        default: on
+    -
+        id: kanban-center-content
+        title: Сenter content in cards
+        description: For work with min-height cards
+        type: class-toggle
+        default: on
+    -
+        id: kanban-full-height-column
+        title: Full height lists
+        description: 
+        type: class-toggle
+        default: on
+    -
+        id: kanban-metatdate-one-line
+        title: One line metadata
+        description: Date and tags on one line in a card. Don't work well with a large number of tags
+        type: class-toggle
+        default: off
 */
 body {
     /* Animations */
@@ -777,60 +842,200 @@ body.headers-one-color {
     --h6-color: var(--h-color-theme);
 }
 
-/* Kanban */
+/* Kanban-common */
 .kanban-plugin {
+    --lane-width: 348px;
+}
+body.theme-light .kanban-plugin__lane-items>div {
+    box-shadow: rgb(140 149 159 / 15%) 0px 3px 6px;
+}
+
+/* Kanban-same-height-cards */
+body.kanban-same-height-cards .kanban-plugin__item-content-wrapper,
+body.kanban-same-height-cards .kanban-plugin__item-title-wrapper {
+    min-height: 68px;
+}
+
+/* Kanban-metatdate-one-line */
+body.kanban-metatdate-one-line .kanban-plugin__item-metadata {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Kanban-center-content */
+body.kanban-center-content .kanban-plugin__item-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Kanban-full-height-column */
+body.kanban-full-height-column button.kanban-plugin__new-item-button {
+    align-self: flex-end;
+}
+body.kanban-full-height-column .kanban-plugin__item-button-wrapper {
+    flex-grow: 1;
+    display: flex;
+}
+body.kanban-full-height-column .kanban-plugin__lane-wrapper {
+    min-height: 100%;
+}
+
+/* Kanban-Minimal */
+body.kanban-on .kanban-plugin {
     background-color: var(--kanban-background);
 }
-.kanban-plugin__lane {
+body.kanban-on .kanban-plugin__lane {
     background-color: var(--kanban-lane-background);
     border: 1px solid var(--kanban-lane-border);
 }
-.kanban-plugin__lane-title {
+body.kanban-on .kanban-plugin__lane-title {
     flex-grow: 0;
     width: fit-content;
 }
-.kanban-plugin__item-content-wrapper,
-.kanban-plugin__item-title-wrapper,
-.kanban-plugin__item-metadata-wrapper:not(:empty) {
+body.kanban-on .kanban-plugin__item-content-wrapper,
+body.kanban-on .kanban-plugin__item-title-wrapper,
+body.kanban-on .kanban-plugin__item-metadata-wrapper:not(:empty) {
     background: var(--kanban-item-background);
 }
-.kanban-plugin__icon>svg {
+body.kanban-on .kanban-plugin__icon>svg {
     transform: rotate(90deg);
 }
-.kanban-plugin__lane-settings-button-wrapper {
+body.kanban-on .kanban-plugin__lane-settings-button-wrapper {
     margin-left: auto;
 }
-div.kanban-plugin__lane-title-count {
+body.kanban-on div.kanban-plugin__lane-title-count {
     background-color: var(--kanban-lane-count);
     border-radius: 1em;
     padding: 2px 5px;
 }
-.kanban-plugin__item button.kanban-plugin__item-prefix-button, 
-.kanban-plugin__item button.kanban-plugin__item-postfix-button, 
-.kanban-plugin__lane button.kanban-plugin__lane-settings-button {
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button, 
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button, 
+body.kanban-on .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
     padding: 0 5px;
     height: 24px;
     box-shadow: none;
 }
-.kanban-plugin__item button.kanban-plugin__item-prefix-button:hover, 
-.kanban-plugin__item button.kanban-plugin__item-postfix-button:hover, 
-.kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button:hover, 
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button:hover, 
+body.kanban-on .kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
     background-color: var(--kanban-options-btn);
     cursor: pointer;
 }
-button.kanban-plugin__new-item-button {
+body.kanban-on button.kanban-plugin__new-item-button {
     border: none;
     justify-content: flex-start;
 }
-.kanban-plugin__new-item-button:hover {
+body.kanban-on .kanban-plugin__new-item-button:hover {
     color: var(--text-normal);
     background-color: inherit;
     box-shadow: none;
 }
-.kanban-plugin__lane-items {
+body.kanban-on .kanban-plugin__lane-items {
     padding: 8px 15px;
 }
-.kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
+body.kanban-on .kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
+    filter: none;
+}
+
+/* Kanban-Full */
+body.kanban-full .kanban-plugin__markdown-preview-view>div>* {
+    overflow-x: unset;
+}
+body.kanban-full .kanban-plugin {
+    background-color: var(--kanban-background);
+}
+body.kanban-full .kanban-plugin__lane-items>div {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+body.kanban-full .kanban-plugin__lane-grip {
+    position: absolute;
+    opacity: 0;
+    width: calc(var(--lane-width) - 1em);
+    height: 3em;
+    z-index: 0;
+    margin: 0;
+}
+body.kanban-full .kanban-plugin__lane-grip {
+    cursor: default;
+}
+body.kanban-full .kanban-plugin__lane-header-wrapper div {
+    z-index: 1;
+}
+body.kanban-full .kanban-plugin__lane-header-wrapper,
+body.kanban-full .kanban-plugin__item-button-wrapper,
+body.kanban-full .kanban-plugin__item-form {
+    border: none;
+}
+body.kanban-full .kanban-plugin__lane {
+    background-color: var(--kanban-lane-background);
+    border: 1px solid var(--kanban-lane-border);
+}
+body.kanban-full .kanban-plugin__lane-title {
+    flex-grow: 0;
+    width: fit-content;
+    font-size: 1em;
+}
+body.kanban-full .kanban-plugin__markdown-preview-view {
+    font-size: inherit;
+}
+body.kanban-full .kanban-plugin__item-content-wrapper,
+body.kanban-full .kanban-plugin__item-title-wrapper,
+body.kanban-full .kanban-plugin__item-metadata-wrapper:not(:empty) {
+    background: var(--kanban-item-background);
+}
+body.kanban-full .kanban-plugin__item-title-wrapper {
+    padding: 6px 12px 8px;
+}
+body.kanban-full .kanban-plugin__icon>svg {
+    transform: rotate(90deg);
+}
+body.kanban-full .kanban-plugin__lane-settings-button-wrapper {
+    margin-left: auto;
+}
+body.kanban-full div.kanban-plugin__lane-title-count {
+    background-color: var(--kanban-lane-count);
+    border-radius: 1em;
+    padding: 2px 5px;
+}
+body.kanban-full .kanban-plugin__item button.kanban-plugin__item-prefix-button, 
+body.kanban-full .kanban-plugin__item button.kanban-plugin__item-postfix-button, 
+body.kanban-full .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
+    padding: 0 5px;
+    height: 24px;
+    box-shadow: none;
+    font-size: 21px;
+}
+body.kanban-full .kanban-plugin__item button.kanban-plugin__item-prefix-button:hover, 
+body.kanban-full .kanban-plugin__item button.kanban-plugin__item-postfix-button:hover, 
+body.kanban-full .kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
+    background-color: var(--kanban-options-btn);
+    cursor: pointer;
+}
+body.kanban-full button.kanban-plugin__new-item-button {
+    border: none;
+    justify-content: flex-start;
+    box-shadow: none;
+    padding-left: 0;
+}
+body.kanban-full .kanban-plugin__item-button-plus {
+    margin-right: 8px;
+    font-size: 1.9em;
+    height: inherit;
+}
+body.kanban-full .kanban-plugin__new-item-button:hover {
+    background-color: inherit;
+    box-shadow: none;
+    color: var(--text-muted);;
+}
+body.kanban-full .kanban-plugin__item {
+    border-color: var(--kanban-lane-border);
+}
+body.kanban-full .kanban-plugin__lane-items {
+    padding: 2px 6px;
+}
+body.kanban-full .kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
     filter: none;
 }
 
