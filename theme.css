@@ -844,12 +844,6 @@ body.kanban-same-height-cards .kanban-plugin__item-title-wrapper {
     min-height: 68px;
 }
 
-/* Kanban-metatdate-one-line */
-body.kanban-metatdate-one-line .kanban-plugin__item-metadata {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Kanban-full-height-column */
 body.kanban-full-height-column button.kanban-plugin__new-item-button {
     align-self: flex-end;
