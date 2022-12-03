@@ -2,7 +2,7 @@
 ![Promo](promo.png)
 
 ## Preview
-<details><summary>Screenshots</summary>
+<details><summary> Screenshots </summary>
 <p>
 
 ![Screenshot-1](/screenshots/note.png)
@@ -16,24 +16,34 @@
 </p>
 </details>
 
-## How to Install
-In Obsidian go to Settings -> Appearence -> Click Manage -> Find GitHub theme in store
+## Features
+ - [Kanban](https://github.com/mgmeyers/obsidian-kanban) board has been styled to look like a GitHub Projects
+ - Callouts in GitHub style
+ - Inline code blocks in GitHub style
+ - Obsidian UI buttons in GitHub style
 
-##### Manually
+## Theme Settigns
+Theme settings can be find in the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
+
+Current settings include:
+- Header colors
+- On/Off kanban styles
+- On/Off callout styles
+- Colorblind colorscheme variants
+
+## How to Install
+Available on the Obsidian theme store.
+
+<details><summary> Manually </summary>
+<p>
+
 1. Download `theme.css` and `manifest.json` files from latest [release](https://github.com/krios2146/obsidian-github/releases/)
 2. Go to **/your_vault/.obsidian/themes/** and create folder for theme files
 3. Paste downloaded theme files into created folder
 4. In Obsidian go to Settings -> Appearance -> select GitHub theme in dropdown menu
 
-## Supported plugins
-Most plugins should work well with a GitHub theme if their not, let me know in [issues](https://github.com/krios2146/obsidian-github/issues). 
-
-List of specially styled plugins is shown below:
-
- - Kanban cards was been styled like a GitHub Projects cards 
-
+</p>
+</details>
 
 ## Contributing
-Feel free to open [issue](https://github.com/krios2146/obsidian-github/issues) on GitHub if you find some issue/bug with theme or you want me to add some plugin support. 
-
-You also can open a [pull request](https://github.com/krios2146/obsidian-github/pulls) if you already add some plugin support or fix bugs by yourself.
+Feel free to open [issue](https://github.com/krios2146/obsidian-github/issues) or [pull request](https://github.com/krios2146/obsidian-github/pulls) on GitHub. I will be glad to work on it.
