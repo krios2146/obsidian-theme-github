@@ -1,4 +1,4 @@
-# Obsidain GitHub theme
+# Obsidain GitHub Theme
 ![Promo](promo.png)
 
 ## Preview
