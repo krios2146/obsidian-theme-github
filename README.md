@@ -1,5 +1,5 @@
 # Obsidain GitHub Theme
-![Promo](promo.png)
+![Promo](/imgs/promo.png)
 ![](https://img.shields.io/badge/downloads-1800%2B-7ee787?style=for-the-badge&labelColor=21262d)
 [![](https://img.shields.io/badge/Obsidian%20October%202022-Runner%20Up-7b6cd9?style=for-the-badge&logo=obsidian&labelColor=21262d)](https://forum.obsidian.md/t/obsidian-october-2022-winners/49087#new-theme-2)
 
@@ -7,13 +7,13 @@
 <details><summary> Screenshots </summary>
 <p>
 
-![Screenshot-1](/screenshots/note.png)
+![Screenshot-1](/imgs/screenshots/note.png)
 
-![Screenshot-2](/screenshots/note-2.png)
+![Screenshot-2](/imgs/screenshots/note-2.png)
 
-![Screenshot-3](/screenshots/command-palette.png)
+![Screenshot-3](/imgs/screenshots/command-palette.png)
 
-![Kanban](/screenshots/kanban-plugin.png)
+![Kanban](/imgs/screenshots/kanban-plugin.png)
 
 </p>
 </details>
