@@ -193,12 +193,38 @@ body {
     --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
     --callout-radius: var(--radius-s);
     --callout-blend-mode: var(--highlight-mix-blend-mode);
+    --callout-title-color: inherit;
     --callout-title-padding: 0;
     --callout-title-size: inherit;
     --callout-content-padding: 0;
+    --callout-content-background: transparent;
+    --callout-bug: var(--color-red-rgb);
+    --callout-default: var(--color-blue-rgb);
+    --callout-error: var(--color-red-rgb);
+    --callout-example: var(--color-purple-rgb);
+    --callout-fail: var(--color-red-rgb);
+    --callout-important: var(--color-cyan-rgb);
+    --callout-info: var(--color-blue-rgb);
+    --callout-question: var(--color-yellow-rgb);
+    --callout-success: var(--color-green-rgb);
+    --callout-summary: var(--color-cyan-rgb);
+    --callout-tip: var(--color-cyan-rgb);
+    --callout-todo: var(--color-blue-rgb);
+    --callout-warning: var(--color-orange-rgb);
+    --callout-quote: 158, 158, 158;
+    /* Canvas */
+    --canvas-background: var(--background-primary);
+    --canvas-card-label-color: var(--text-faint);
+    --canvas-color-1: var(--color-red-rgb);
+    --canvas-color-2: var(--color-orange-rgb);
+    --canvas-color-3: var(--color-yellow-rgb);
+    --canvas-color-4: var(--color-green-rgb);
+    --canvas-color-5: var(--color-cyan-rgb);
+    --canvas-color-6: var(--color-purple-rgb);
+    --canvas-dot-pattern: var(--color-base-30);
     /* Checkboxes */
     --checkbox-radius: var(--radius-s);
-    --checkbox-size: 15px;
+    --checkbox-size: var(--font-text-size);
     --checkbox-marker-color: var(--background-primary);
     --checkbox-color: var(--interactive-accent);
     --checkbox-color-hover: var(--interactive-accent-hover);
@@ -207,16 +233,18 @@ body {
     --checklist-done-decoration: line-through;
     --checklist-done-color: var(--text-muted);
     /* Code */
+    --code-white-space: pre-wrap;
     --code-size: var(--font-smaller);
     --code-background: var(--background-primary-alt);
     --code-normal: var(--text-muted);
     --code-comment: var(--text-faint);
-    --code-function: var(--color-orange);
+    --code-function: var(--color-yellow);
     --code-important: var(--color-orange);
-    --code-keyword: var(--color-red);
-    --code-property: var(--color-blue);
+    --code-keyword: var(--color-pink);
+    --code-operator: var(--color-red);
+    --code-property: var(--color-cyan);
     --code-punctuation: var(--text-muted);
-    --code-string: var(--color-cyan);
+    --code-string: var(--color-green);
     --code-tag: var(--color-red);
     --code-value: var(--color-purple);
     /* Collapse icons */
@@ -239,6 +267,8 @@ body {
     --drag-ghost-background: rgba(0, 0, 0, 0.85);
     --drag-ghost-text-color: #fff;
     /* Embeds */
+    --embed-max-height: 4000px;
+    --embed-canvas-max-height: 400px;
     --embed-background: inherit;
     --embed-border-left: 2px solid var(--interactive-accent);
     --embed-border-right: none;
@@ -248,7 +278,7 @@ body {
     --embed-font-style: inherit;
     /* Blocks */
     --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
-        inset 0 0 0 1px var(--background-modifier-border);
+      inset 0 0 0 1px var(--background-modifier-border);
     /* File layout */
     --file-line-width: 700px;
     --file-folding-offset: 24px;
@@ -289,12 +319,12 @@ body {
     --graph-node-attachment: var(--color-yellow);
     /* Headings */
     --heading-formatting: var(--text-faint);
-    --h1-color: var(--h1-color-theme);
-    --h2-color: var(--h2-color-theme);
-    --h3-color: var(--h3-color-theme);
-    --h4-color: var(--h4-color-theme);
-    --h5-color: var(--h5-color-theme);
-    --h6-color: var(--h6-color-theme);
+    --h1-color: inherit;
+    --h2-color: inherit;
+    --h3-color: inherit;
+    --h4-color: inherit;
+    --h5-color: inherit;
+    --h6-color: inherit;
     --h1-font: inherit;
     --h2-font: inherit;
     --h3-font: inherit;
@@ -343,10 +373,12 @@ body {
     --icon-s: 16px;
     --icon-m: 18px;
     --icon-l: 18px;
+    --icon-xl: 32px;
     --icon-xs-stroke-width: 2px;
     --icon-s-stroke-width: 2px;
     --icon-m-stroke-width: 1.75px;
     --icon-l-stroke-width: 1.75px;
+    --icon-xl-stroke-width: 1.25px;
     --icon-color: var(--text-muted);
     --icon-color-hover: var(--text-muted);
     --icon-color-active: var(--text-accent);
@@ -391,12 +423,12 @@ body {
     /* Links */
     --link-color: var(--text-accent);
     --link-color-hover: var(--text-accent-hover);
-    --link-decoration: none;
+    --link-decoration: underline;
     --link-decoration-hover: underline;
     --link-decoration-thickness: auto;
     --link-external-color: var(--text-accent);
     --link-external-color-hover: var(--text-accent-hover);
-    --link-external-decoration: none;
+    --link-external-decoration: underline;
     --link-external-decoration-hover: underline;
     --link-external-filter: none;
     --link-unresolved-color: var(--text-accent);
@@ -407,13 +439,14 @@ body {
     /* Lists */
     --list-indent: 2em;
     --list-spacing: 0.075em;
-    --list-marker-color: var(--text-normal);
+    --list-marker-color: var(--text-faint);
     --list-marker-color-hover: var(--text-muted);
     --list-marker-color-collapsed: var(--text-accent);
     --list-bullet-border: none;
     --list-bullet-radius: 50%;
-    --list-bullet-size: 5px;
+    --list-bullet-size: 0.3em;
     --list-bullet-transform: none;
+    --list-numbered-style: decimal;
     /* File navigator */
     --nav-item-size: var(--font-ui-small);
     --nav-item-color: var(--text-muted);
@@ -423,8 +456,11 @@ body {
     --nav-item-color-highlighted: var(--text-accent-hover);
     --nav-item-background-hover: var(--background-modifier-hover);
     --nav-item-background-active: var(--background-modifier-hover);
-    --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2);
+    --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
     --nav-item-padding: var(--size-4-1) var(--size-4-2);
+    --nav-item-parent-padding: var(--nav-item-padding);
+    --nav-item-children-padding-left: var(--size-4-2);
+    --nav-item-children-margin-left: var(--size-4-3);
     --nav-item-weight: inherit;
     --nav-item-weight-hover: inherit;
     --nav-item-weight-active: inherit;
@@ -441,7 +477,7 @@ body {
     --modal-max-height: 1000px;
     --modal-max-width-narrow: 800px;
     --modal-border-width: var(--border-width);
-    --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
+    --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
     --modal-radius: var(--radius-l);
     --modal-community-sidebar-width: 280px;
     /* Popovers - file previews */
@@ -514,6 +550,7 @@ body {
     --status-bar-text-color: var(--text-muted);
     --status-bar-position: fixed;
     --status-bar-radius: var(--radius-m) 0 0 0;
+    --status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
     /* Swatch for color inputs */
     --swatch-radius: 14px;
     --swatch-height: 24px;
@@ -522,8 +559,11 @@ body {
     /* Tabs */
     --tab-background-active: var(--background-primary);
     --tab-text-color: var(--text-faint);
+    --tab-text-color-active: var(--text-muted);
     --tab-text-color-focused: var(--text-muted);
-    --tab-text-color-focused-active: var(--text-normal);
+    --tab-text-color-focused-active: var(--text-muted);
+    --tab-text-color-focused-highlighted: var(--text-accent);
+    --tab-text-color-focused-active-current: var(--text-normal);
     --tab-font-size: var(--font-ui-small);
     --tab-font-weight: inherit;
     --tab-container-background: var(--background-secondary);
@@ -554,8 +594,8 @@ body {
     --table-header-border-width: var(--table-border-width);
     --table-header-border-color: var(--table-border-color);
     --table-header-font: inherit;
-    --table-header-size: inherit;
-    --table-header-weight: var(--font-semibold);
+    --table-header-size: var(--font-text-size);
+    --table-header-weight: var(--bold-weight);
     --table-header-color: var(--text-normal);
     --table-text-size: inherit;
     --table-text-color: inherit;
@@ -587,7 +627,6 @@ body {
     --titlebar-border-color: var(--background-modifier-border);
     --titlebar-text-color: var(--text-muted);
     --titlebar-text-color-focused: var(--text-normal);
-    --titlebar-text-color-highlighted: var(--text-accent-hover);
     --titlebar-text-weight: var(--font-bold);
     /* Toggles */
     --toggle-border-width: 2px;
@@ -609,18 +648,18 @@ body {
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
     /* Color mappings ------------------------ */
     /* Accent HSL values */
-    --accent-h: var(--accent-h-theme);
-    --accent-s: var(--accent-s-theme);
-    --accent-l: var(--accent-l-theme);
+    --accent-h: 254;
+    --accent-s: 80%;
+    --accent-l: 68%;
     /* Backgrounds */
     --background-primary: var(--color-base-00);
     --background-primary-alt: var(--color-base-10);
     --background-secondary: var(--color-base-20);
-    --background-modifier-hover: rgba(var(--rgb-hover), var(--background-modifier-hover-alpha));
+    --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
-    --background-modifier-border-hover: var(--color-base-30);
-    --background-modifier-border-focus: var(--color-accent);
+    --background-modifier-border-hover: var(--color-base-35);
+    --background-modifier-border-focus: var(--color-base-40);
     --background-modifier-error-rgb: var(--color-red-rgb);
     --background-modifier-error: var(--color-red);
     --background-modifier-error-hover: var(--color-red);
@@ -628,12 +667,13 @@ body {
     --background-modifier-success: var(--color-green);
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     /* Inputs */
-    --background-modifier-form-field: var(--color-base-25);
+    --background-modifier-form-field: var(--color-base-00);
     /* Text */
     --text-normal: var(--color-base-100);
     --text-muted: var(--color-base-70);
     --text-faint: var(--color-base-50);
     --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-error: var(--color-red);
     --text-success: var(--color-green);
     --text-selection: hsla(var(--color-accent-hsl), 0.2);
@@ -644,7 +684,7 @@ body {
     --interactive-accent-hsl: var(--color-accent-hsl);
     --interactive-accent: var(--color-accent-1);
     --interactive-accent-hover: var(--color-accent-2);
-}
+  }
 
 .theme-dark {
     color-scheme: dark;
