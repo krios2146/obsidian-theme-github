@@ -809,14 +809,20 @@ body {
 }
 
 body.colorblind_protan-deutan.theme-dark {
-    --color-red-rgb: 253, 172, 84;
-    --color-red: #fdac54;
-    --color-green-rgb: 165, 214, 255;
-    --color-green: #a3d6ff;
-    --color-orange: #fdac54;
+    --color-success-fg: #58a6ff;
+    --color-success-emphasis: #1f6feb;
+    --color-success-muted: rgba(56,139,253,0.4);
+    --color-success-subtle: rgba(56,139,253,0.15);
 
-    --color-btn-primary-bg: #1f6feb;
-    --color-btn-primary-hover-bg: #388bfd;
+    --color-severe-fg: #d47616;
+    --color-severe-emphasis: #b76100;
+    --color-severe-muted: rgba(212,118,22,0.4);
+    --color-severe-subtle: rgba(212,118,22,0.1);
+
+    --color-danger-fg: #d47616;
+    --color-danger-emphasis: #b76100;
+    --color-danger-muted: rgba(212,118,22,0.4);
+    --color-danger-subtle: rgba(212,118,22,0.1);
 }
 
 body.colorblind_protan-deutan.theme-light {
