@@ -855,15 +855,20 @@ body.colorblind_tritan.theme-dark {
 }
 
 body.colorblind_tritan.theme-light {
-    --color-green-rgb: 12, 181, 79;
-    --color-green: #218bff;
-    --color-orange: #fa4549;
+    --color-success-fg: #0969da;
+    --color-success-emphasis: #1f883d;
+    --color-success-muted: rgba(84,174,255,0.4);
+    --color-success-subtle: #ddf4ff;
 
-    --text-highlight-bg: rgba(255, 0, 0, 0.4);
-    --text-highlight-bg-active: rgba(255, 50, 0, 0.4);
+    --color-severe-fg: #cf222e;
+    --color-severe-emphasis: #cf222e;
+    --color-severe-muted: rgba(255,129,130,0.4);
+    --color-severe-subtle: #ffebe9;
 
-    --color-btn-primary-bg: #218bff;
-    --color-btn-primary-hover-bg: #0969da;
+    --color-danger-fg: #d1242f;
+    --color-danger-emphasis: #cf222e;
+    --color-danger-muted: rgba(255,129,130,0.4);
+    --color-danger-subtle: #ffebe9;
 }
 
 /* Tables */
