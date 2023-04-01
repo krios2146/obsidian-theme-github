@@ -702,9 +702,9 @@ body {
     --color-border-subtle: rgba(240, 246, 252, 0.1);
 
     --color-shadow-small: 0 0 transparent;
-    --color-shadow-small: 0 3px 6px #010409;
-    --color-shadow-small: 0 8px 24px #010409;
-    --color-shadow-small: 0 12px 48px #010409;
+    --color-shadow-medium: 0 3px 6px #010409;
+    --color-shadow-large: 0 8px 24px #010409;
+    --color-shadow-extra-large: 0 12px 48px #010409;
 
     --color-neutral-emphasis-plus: #6e7681;
     --color-neutral-emphasis: #6e7681;
@@ -745,6 +745,67 @@ body {
     --color-sponsors-emphasis: #bf4b8a;
     --color-sponsors-muted: rgba(219, 97, 162, 0.4);
     --color-sponsors-subtle: rgba(219, 97, 162, 0.1);
+}
+
+.theme-light {
+    --color-fg-default: #1F2328;
+    --color-fg-muted: #656d76;
+    --color-fg-subtle: #6e7781;
+    --color-fg-on-emphasis: #ffffff;
+
+    --color-canvas-default: #ffffff;
+    --color-canvas-overlay: #ffffff;
+    --color-canvas-inset: #f6f8fa;
+    --color-canvas-subtle: #f6f8fa;
+
+    --color-border-default: #d0d7de;
+    --color-border-muted: hsla(210,18%,87%,1);
+    --color-border-subtle: rgba(31,35,40,0.15);
+
+    --color-shadow-small: 0 1px 0 rgba(31,35,40,0.04);
+    --color-shadow-medium: 0 3px 6px rgba(140,149,159,0.15);
+    --color-shadow-large: 0 8px 24px rgba(140,149,159,0.2);
+    --color-shadow-extra-large: 0 12px 28px rgba(140,149,159,0.3);
+
+    --color-neutral-emphasis-plus: #24292f;
+    --color-neutral-emphasis: #6e7781;
+    --color-neutral-muted: rgba(175,184,193,0.2);
+    --color-neutral-subtle: rgba(234,238,242,0.5);
+
+    --color-accent-fg: #0969da;
+    --color-accent-emphasis: #0969da;
+    --color-accent-muted: rgba(84,174,255,0.4);
+    --color-accent-subtle: #ddf4ff;
+
+    --color-success-fg: #1a7f37;
+    --color-success-emphasis: #1f883d;
+    --color-success-muted: rgba(74,194,107,0.4);
+    --color-success-subtle: #dafbe1;
+
+    --color-attention-fg: #9a6700;
+    --color-attention-emphasis: #9a6700;
+    --color-attention-muted: rgba(212,167,44,0.4);
+    --color-attention-subtle: #fff8c5;
+
+    --color-severe-fg: #bc4c00;
+    --color-severe-emphasis: #bc4c00;
+    --color-severe-muted: rgba(251,143,68,0.4);
+    --color-severe-subtle: #fff1e5;
+
+    --color-danger-fg: #d1242f;
+    --color-danger-emphasis: #cf222e;
+    --color-danger-muted: rgba(255,129,130,0.4);
+    --color-danger-subtle: #ffebe9;
+
+    --color-done-fg: #8250df;
+    --color-done-emphasis: #8250df;
+    --color-done-muted: rgba(194,151,255,0.4);
+    --color-done-subtle: #fbefff;
+
+    --color-sponsors-fg: #bf3989;
+    --color-sponsors-emphasis: #bf3989;
+    --color-sponsors-muted: rgba(255,128,200,0.4);
+    --color-sponsors-subtle: #ffeff7;
 }
 
 body.colorblind_protan-deutan.theme-dark {
