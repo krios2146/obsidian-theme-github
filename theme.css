@@ -837,15 +837,15 @@ body.colorblind_protan-deutan.theme-light {
 }
 
 body.colorblind_tritan.theme-dark {
-    --color-green-rgb: 165, 214, 255;
-    --color-green: #a5d6ff;
-    --color-orange: #ffa198;
+    --color-success-fg: #58a6ff;
+    --color-success-emphasis: #1f6feb;
+    --color-success-muted: rgba(56,139,253,0.4);
+    --color-success-subtle: rgba(56,139,253,0.15);
 
-    --text-highlight-bg: rgba(255, 0, 0, 0.4);
-    --text-highlight-bg-active: rgba(255, 50, 0, 0.4);
-
-    --color-btn-primary-bg: #1f6feb;
-    --color-btn-primary-hover-bg: #388bfd;
+    --color-severe-fg: #f85149;
+    --color-severe-emphasis: #da3633;
+    --color-severe-muted: rgba(248, 81, 73, 0.4);
+    --color-severe-subtle: rgba(248, 81, 73, 0.1);
 }
 
 body.colorblind_tritan.theme-light {
