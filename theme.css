@@ -1170,6 +1170,13 @@ body.kanban-full .kanban-plugin__new-item-button:hover {
     color: var(--text-muted);
 }
 
+/* HOVER EDITOR PLUGIN */
+/* Add borders */
+.popover.hover-editor > .popover-content {
+    border: var(--border-width) var(--color-base-30) solid;
+    box-shadow: 0 0 10px 3px var(--background-modifier-box-shadow);
+}
+
 /* FIXIES */
 body.kanban-full .kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
     filter: none;
