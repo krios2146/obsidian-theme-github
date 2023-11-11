@@ -1,7 +1,7 @@
 # Obsidain GitHub Theme
 
 ![Promo](/imgs/promo.png)
-![](https://img.shields.io/badge/downloads-14500%2B-7ee787?style=for-the-badge&labelColor=21262d)
+![](https://img.shields.io/badge/downloads-16700%2B-7ee787?style=for-the-badge&labelColor=21262d)
 [![](https://img.shields.io/badge/Obsidian%20October%202022-Runner%20Up-7b6cd9?style=for-the-badge&logo=obsidian&labelColor=21262d)](https://forum.obsidian.md/t/obsidian-october-2022-winners/49087#new-theme-2)
 
 ## Preview
