@@ -15,14 +15,12 @@ settings:
         id: colorblind_protan-deutan
         title: Protanopia & Deuteranopia
         type: class-toggle
-        default: off
     -        
         id: colorblind_tritan
         title: Tritanopia
         type: class-toggle
-        default: off
-    -
 
+    -
         # Callout Settings
 
         id: callout
@@ -34,9 +32,26 @@ settings:
         id: callout-on
         title: GitHub callout style
         type: class-toggle
-        default: on
-    -
+        default: true
 
+    -
+        # Headers underline
+
+        id: headers-underline
+        title: Headers underline
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: h1-underline
+        title: H1 header underline enabled
+        type: class-toggle
+    -
+        id: h2-underline
+        title: H2 header underline enabled
+        type: class-toggle
+
+    -
         # Headers Settings
 
         id: headers
@@ -45,7 +60,6 @@ settings:
         level: 1
         collapsed: true
     -
-
         # All Headers
 
         id: all-headers
@@ -57,7 +71,7 @@ settings:
         id: headers-one-color
         title: All headers are the same color
         type: class-toggle
-        default: on
+        default: true
     -
         id: h-color-theme
         title: Header color
@@ -66,8 +80,8 @@ settings:
         format: hex
         default-light: '#24292f'
         default-dark: '#7ee787'
-    -
 
+    -
         # Particular Headers
 
         id: particular headers
@@ -124,8 +138,8 @@ settings:
         format: hex
         default-light: '#24292f'
         default-dark: '#7ee787'
-    -
 
+    -
         # Kanban Settings
 
         id: kanban
@@ -155,13 +169,13 @@ settings:
         title: Minimal height for cards
         description: All cards will have the same initial height
         type: class-toggle
-        default: on
+        default: true
     -
         id: kanban-full-height-column
         title: Full height lists
         description: 
         type: class-toggle
-        default: on
+        default: true
 */
 body {
     /* Animations */
@@ -1217,4 +1231,15 @@ select:focus, .dropdown:focus {
     padding: 0.2em 0.4em;
     border-radius: 6px;
     color: var(--text-normal);
+}
+
+/* Underline for the top level headers */
+
+body.h1-underline h1, body.h1-underline.markdown-rendered h1 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid var(--color-base-40);
+}
+body.h2-underline h2, body.h2-underline.markdown-rendered h2 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid var(--color-base-40);
 }
