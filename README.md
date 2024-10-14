@@ -1,4 +1,4 @@
-# Obsidain GitHub Theme
+# Obsidian GitHub Theme
 
 ![Promo](/imgs/promo.png)
 ![](https://img.shields.io/badge/downloads-54200%2B-7ee787?style=for-the-badge&labelColor=21262d)
