@@ -23,14 +23,14 @@
 
 ## Features
 
-- [Kanban](https://github.com/mgmeyers/obsidian-kanban) board has been styled to look like a GitHub Projects
+- [Kanban](https://github.com/obsidian-community/obsidian-kanban) board has been styled to look like a GitHub Projects
 - Callouts in GitHub style
 - Inline code blocks in GitHub style
 - Obsidian UI buttons in GitHub style
 
-## Theme Settigns
+## Theme Settings
 
-Theme settings can be find in the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
+Theme settings can be find in the [Style Settings](https://github.com/obsidian-community/obsidian-style-settings) plugin.
 
 Current settings include:
 
@@ -50,7 +50,7 @@ Available on the Obsidian theme store.
 1. Download `theme.css` and `manifest.json` files from latest [release](https://github.com/krios2146/obsidian-github/releases/)
 2. Go to **/your_vault/.obsidian/themes/** and create folder for theme files
 3. Paste downloaded theme files into created folder
-4. In Obsidian go to Settings -> Appearance -> select GitHub theme in dropdown menu
+4. In Obsidian go to Settings -> Appearance -> Themes -> select GitHub Theme in dropdown menu
 
 </p>
 </details>
