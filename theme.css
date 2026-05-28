@@ -1,21 +1,21 @@
 /* @settings
 
-name: GitHub theme settings
+name: GitHub Dark Dimmed theme settings
 id: id
 settings:
     -
-        # Colorblind 
+        # Colorblind
 
         id: colorblind
         title: Colorblind variants
         type: heading
         level: 1
         collapsed: true
-    - 
+    -
         id: colorblind_protan-deutan
         title: Protanopia & Deuteranopia
         type: class-toggle
-    -        
+    -
         id: colorblind_tritan
         title: Tritanopia
         type: class-toggle
@@ -28,7 +28,7 @@ settings:
         type: heading
         level: 1
         collapsed: true
-    - 
+    -
         id: callout-on
         title: GitHub callout style
         type: class-toggle
@@ -173,7 +173,7 @@ settings:
     -
         id: kanban-full-height-column
         title: Full height lists
-        description: 
+        description:
         type: class-toggle
         default: true
 */
@@ -904,10 +904,10 @@ body.colorblind_tritan.theme-light {
 }
 
 /* Tables */
-.markdown-rendered td, 
+.markdown-rendered td,
 .markdown-rendered th {
     padding: var(--size-2-3) var(--size-4-3);
-} 
+}
 .markdown-rendered th {
     text-align: center;
 }
@@ -1009,15 +1009,15 @@ body.kanban-on div.kanban-plugin__lane-title-count {
     border-radius: 1em;
     padding: 2px 5px;
 }
-body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button, 
-body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button, 
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button,
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button,
 body.kanban-on .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
     padding: 0 5px;
     height: 24px;
     box-shadow: none;
 }
-body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button:hover, 
-body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button:hover, 
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-prefix-button:hover,
+body.kanban-on .kanban-plugin__item button.kanban-plugin__item-postfix-button:hover,
 body.kanban-on .kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
     background-color: var(--kanban-options-btn);
     cursor: pointer;
@@ -1201,23 +1201,23 @@ body.kanban-full .kanban-plugin__markdown-preview-view>div>* {
 }
 
 /* fix: input borders */
-textarea:active, 
-input[type='text']:active, 
-input[type='search']:active, 
-input[type='email']:active, 
-input[type='password']:active, 
-input[type='number']:active, 
-textarea:focus, 
-input[type='text']:focus, 
-input[type='search']:focus, 
-input[type='email']:focus, 
-input[type='password']:focus, 
-input[type='number']:focus, 
-textarea:focus-visible, 
-input[type='text']:focus-visible, 
-input[type='search']:focus-visible, 
-input[type='email']:focus-visible, 
-input[type='password']:focus-visible, 
+textarea:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
+textarea:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+textarea:focus-visible,
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
 input[type='number']:focus-visible {
     box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
 }

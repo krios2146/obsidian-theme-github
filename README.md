@@ -1,8 +1,6 @@
 # Obsidian GitHub Theme
 
-![Promo](/imgs/promo.png)
-![](https://img.shields.io/badge/downloads-54200%2B-7ee787?style=for-the-badge&labelColor=21262d)
-[![](https://img.shields.io/badge/Obsidian%20October%202022-Runner%20Up-7b6cd9?style=for-the-badge&logo=obsidian&labelColor=21262d)](https://obsidian.md/blog/2022-obsidian-october-winners/#New%20theme)
+Based on [Obsidian GitHub Theme](https://github.com/krios2146/obsidian-theme-github) by [krios2146](https://github.com/krios2146).
 
 ## Preview
 
@@ -30,14 +28,13 @@
 
 ## Theme Settings
 
-Theme settings can be find in the [Style Settings](https://github.com/obsidian-community/obsidian-style-settings) plugin.
+Theme settings can be found in the [Style Settings](https://github.com/obsidian-community/obsidian-style-settings) plugin.
 
 Current settings include:
 
 - Header colors
 - On/Off kanban styles
 - On/Off callout styles
-- Colorblind colorscheme variants
 
 ## How to Install
 
@@ -47,14 +44,14 @@ Available on the Obsidian theme store.
 <summary> Manually </summary>
 <p>
 
-1. Download `theme.css` and `manifest.json` files from latest [release](https://github.com/krios2146/obsidian-github/releases/)
+1. Download `theme.css` and `manifest.json` files from latest [release](https://github.com/rgormley/obsidian-theme-github-dark-dimmed)
 2. Go to **/your_vault/.obsidian/themes/** and create folder for theme files
 3. Paste downloaded theme files into created folder
-4. In Obsidian go to Settings -> Appearance -> Themes -> select GitHub Theme in dropdown menu
+4. In Obsidian go to Settings > Appearance > Themes > select GitHub Dark Dimmed Theme in dropdown menu
 
 </p>
 </details>
 
 ## Contributing
 
-Feel free to open [issue](https://github.com/krios2146/obsidian-github/issues) or [pull request](https://github.com/krios2146/obsidian-github/pulls) on GitHub. I will be glad to work on it.
+Feel free to open an [issue](https://github.com/rgormley/obsidian-theme-github-dark-dimmed/issues) or [Pull Request](https://github.com/rgormley/obsidian-theme-github-dark-dimmed/pulls) on GitHub.
