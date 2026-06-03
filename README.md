@@ -26,7 +26,13 @@
 - [Kanban](https://github.com/obsidian-community/obsidian-kanban) board has been styled to look like a GitHub Projects
 - Callouts in GitHub style
 - Inline code blocks in GitHub style
+- `<kbd>` tags in GitHub style
 - Obsidian UI buttons in GitHub style
+- GitHub **Dark Dimmed** palette variant
+- Custom task list icons (Tasks plugin syntax: `- [!]`, `- [?]`, `- [*]`, `- [/]`, `- [P]` for PRs, etc.)
+- Vim mode indicator in status bar (requires [Vimrc Support](https://github.com/esm7/obsidian-vimrc-support))
+- **Copilot accent** — spotlights AI callouts (`[!ai]`, `[!copilot]`, `[!gpt]`, `[!llm]`, `[!prompt]`) and matching tags in Copilot Purple
+- **Security accent** — spotlights sensitive callouts (`[!security]`, `[!secret]`, `[!encrypted]`, `[!private]`, `[!vault]`) and matching tags in Security Blue
 
 ## Theme Settings
 
@@ -35,9 +41,12 @@ Theme settings can be find in the [Style Settings](https://github.com/obsidian-c
 Current settings include:
 
 - Header colors
+- Headers underline (H1, H2)
 - On/Off kanban styles
 - On/Off callout styles
 - Colorblind colorscheme variants
+- Dark Dimmed variant (applies on Dark theme)
+- Accent themes: Copilot accent, Security accent
 
 ## How to Install
 
