@@ -884,6 +884,7 @@ body.colorblind_tritan.theme-light {
   /* override obsidian default */
   --heading-spacing: var(--base-size-24);
 
+  font-family: var(--fontStack-sansSerif);
   color: var(--fgColor-default);
 }
 
@@ -1009,6 +1010,15 @@ body.colorblind_tritan.theme-light {
   background-image: unset;
 }
 
+.markdown-rendered a.tag {
+  padding: var(--tag-padding-y) var(--tag-padding-x);
+  text-decoration: none;
+}
+
+.markdown-rendered blockquote a strong {
+  color: var(--fgColor-accent);
+}
+
 .markdown-rendered .internal-link {
   text-decoration: underline;
 }
@@ -1088,9 +1098,37 @@ body.colorblind_tritan.theme-light {
   margin-top: 0.25em;
 }
 
+.markdown-rendered .footnotes {
+  font-size: 12px;
+  color: var(--fgColor-muted);
+}
+
+.markdown-rendered .footnotes :not(pre) > code {
+  color: var(--fgColor-muted);
+}
+
 .markdown-rendered .footnotes p {
   margin-block: 0 var(--base-size-16);
 }
+
+.markdown-rendered .footnotes ol > li {
+  margin-inline-start: var(--base-size-16);
+}
+
+.markdown-rendered .footnotes > hr:first-of-type {
+  margin: var(--base-size-16) 0;
+  border-top: 1px solid var(--borderColor-default);
+}
+
+.markdown-rendered .footnotes ol > li::marker,
+.markdown-rendered .footnotes ul > li::marker {
+  color: var(--fgColor-muted);
+}
+
+/* 针对 footnote 返回箭头强行优先使用 Emoji 字体 */
+/* .footnotes .footnote-backref {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+} */
 
 /* Buttons */
 button {
@@ -1226,6 +1264,11 @@ button.mod-cta:hover {
 /* Mermaid */
 .markdown-rendered .mermaid {
   margin-block-end: var(--base-size-16);
+}
+
+.markdown-rendered .mermaid > svg {
+  display: block;
+  margin-inline: auto;
 }
 
 /* Markdown Heading */
