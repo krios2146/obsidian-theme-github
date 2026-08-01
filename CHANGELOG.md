@@ -1,5 +1,13 @@
 # Change log
 
+## 1.0.14
+
+> 2026-08-02
+
+- Fix tag style
+- Update footnotes style
+- Center the mermaid block
+
 ## 1.0.13
 
 > 2026-07-17

@@ -1,7 +1,7 @@
 {
   "name": "obsidian-theme-gfm",
   "type": "module",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": true,
   "packageManager": "pnpm@10.33.4",
   "description": "GitHub Flavored Markdown Theme for Obsidian",
