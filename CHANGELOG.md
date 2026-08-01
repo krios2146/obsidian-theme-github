@@ -1,5 +1,11 @@
 # Change log
 
+## 1.0.15
+
+> 2026-08-02
+
+- Update footnotes margins
+
 ## 1.0.14
 
 > 2026-08-02
