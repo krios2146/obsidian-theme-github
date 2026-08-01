@@ -1125,10 +1125,9 @@ body.colorblind_tritan.theme-light {
   color: var(--fgColor-muted);
 }
 
-/* 针对 footnote 返回箭头强行优先使用 Emoji 字体 */
-/* .footnotes .footnote-backref {
-  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
-} */
+.markdown-rendered .footnotes li + li {
+  margin-top: var(--base-size-16);
+}
 
 /* Buttons */
 button {
