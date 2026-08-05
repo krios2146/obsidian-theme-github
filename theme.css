@@ -714,9 +714,9 @@ body {
     --mono-rgb-0: 0, 0, 0;
     --mono-rgb-100: 255, 255, 255;
     --rgb-hover: 177, 186, 196;
-    --color-red-rgb: 248, 81, 73;
+    --color-red-rgb: rgb(248, 81, 73);
     --color-red: #F47067;
-    --color-green-rgb: 126, 231, 135;
+    --color-green-rgb: rgb(126, 231, 135);
     --color-green: #7ee787;
     --color-orange: #FFA657;
     --color-yellow: #d29922;
@@ -795,9 +795,9 @@ body {
     --mono-rgb-0: 255, 255, 255;
     --mono-rgb-100: 0, 0, 0;
     --rgb-hover: 208, 215, 222;
-    --color-red-rgb: 228, 55, 75;
+    --color-red-rgb: rgb(228, 55, 75);
     --color-red: #cf222e;
-    --color-green-rgb: 12, 181, 79;
+    --color-green-rgb: rgb(12, 181, 79);
     --color-green: #0cb54f;
     --color-orange: #d96c00;
     --color-yellow: #BD8E37;
@@ -860,9 +860,9 @@ body {
 
 
 body.colorblind_protan-deutan.theme-dark {
-    --color-red-rgb: 253, 172, 84;
+    --color-red-rgb: rgb(253, 172, 84);
     --color-red: #fdac54;
-    --color-green-rgb: 165, 214, 255;
+    --color-green-rgb: rgb(165, 214, 255);
     --color-green: #a3d6ff;
     --color-orange: #fdac54;
 
@@ -870,9 +870,9 @@ body.colorblind_protan-deutan.theme-dark {
     --color-btn-primary-hover-bg: #388bfd;
 }
 body.colorblind_protan-deutan.theme-light {
-    --color-red-rgb: 179, 89, 0;
+    --color-red-rgb: rgb(179, 89, 0);
     --color-red: #b35900;
-    --color-green-rgb: 33, 139, 255;
+    --color-green-rgb: rgb(33, 139, 255);
     --color-green: #218bff;
     --color-orange: #dd7815;
 
@@ -881,7 +881,7 @@ body.colorblind_protan-deutan.theme-light {
 }
 
 body.colorblind_tritan.theme-dark {
-    --color-green-rgb: 165, 214, 255;
+    --color-green-rgb: rgb(165, 214, 255);
     --color-green: #a5d6ff;
     --color-orange: #ffa198;
 
@@ -892,7 +892,7 @@ body.colorblind_tritan.theme-dark {
     --color-btn-primary-hover-bg: #388bfd;
 }
 body.colorblind_tritan.theme-light {
-    --color-green-rgb: 12, 181, 79;
+    --color-green-rgb: rgb(12, 181, 79);
     --color-green: #218bff;
     --color-orange: #fa4549;
 
